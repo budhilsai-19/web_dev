@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Department</title>
+    <link rel="stylesheet" href="./css/department.css">
+</head>
+<body>
+    <h2>Department Details</h2>
+    <form method="post" action="./Welcome.html" id="myForm">
+        <p>
+            <label for="department-name">Department Name</label>
+            <input type="text" id="department-name" name="department-name" pattern="[a-zA-Z]+" maxlength="30" required>
+            <br><br>
+    
+            <label for="department-decsription">Department  Description</label>
+            <br>
+            <textarea id="department-decsription" name="department-decsription" rows="4" cols="50" maxlength="50">Description should not be more than 50 characters</textarea>
+            <br><br>
+    
+            <label for="no-of-doctors">No. Of Doctors</label>
+            <input type="number" id="no-of-doctors" name="no-of-doctors" required>
+            <br><br>
+    
+            <label for="no-of-ac-rooms">Number of AC rooms</label>
+            <input type="number" id="no-of-ac-rooms" name="no-of-ac-rooms" required>
+            <br><br>
+    
+            <label for="no-of-non-ac-rooms">Number of Non AC rooms</label>
+            <input type="number" id="no-of-non-ac-rooms" name="no-of-non-ac-rooms" required>
+            <br><br>
+    
+            <label for="no-of-icu-rooms">Number of ICU rooms</label>
+            <input type="number" id="no-of-icu-rooms" name="no-of-icu-rooms" required>
+            <br><br>
+    
+            <label for="cost-of-ac-rooms">Cost of AC rooms</label>
+            <input type="text" oninput="valid(this)" id="cost-of-ac-rooms" name="cost"  min="0.00" value="0.00" step=".01" required>
+            <br><br>
+    
+            <label for="cost-of-non-ac-rooms">Cost of Non AC rooms</label>
+            <input type="text" oninput="valid(this)" id="cost-of-non-ac-rooms" name="cost" min="0.00" value="0.00" step=".01" required>
+            <br><br>
+    
+            <label for="cost-of-icu-rooms">Cost of ICU rooms</label>
+            <input type="text" oninput="valid(this)" id="cost-of-icu-rooms" name="cost"  min="0.00" value="0.00" step=".01" required>
+            <br><br>
+    
+            <input type="submit" value="Submit">
+        </p>
+        
+    </form>
+    <script src="./js/dep-script.js"></script>
+</body>
+</html>

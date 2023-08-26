@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Doctor Page</title>
+    <link rel="stylesheet" href="./css/doctor.css">
+</head>
+<body>
+    <H2>Fill the below details to register a doctor into HMS</H2>
+    <form method="post" action="./Welcome.html" id="myForm">
+        <p>
+            <label for="fname">First Name</label>
+            &nbsp;&nbsp;
+            <input type="text" id="fname" placeholder="First Name" pattern="[a-zA-Z]+" maxlength="20" required>
+            <br><br>
+
+            <label for="mname">Middle Name</label>
+            &nbsp;&nbsp;
+            <input type="text" id="mname" placeholder="Middle Name">
+            <br><br>
+
+            <label for="lname">Last Name</label>
+            &nbsp;&nbsp;
+            <input type="text" id="lname" placeholder="Last Name" pattern="[a-zA-Z]+" maxlength="20" required>
+            <br><br>
+
+            <label for="regno">Registration Number</label>
+            &nbsp;&nbsp;
+            <input type="text" id="regno" placeholder="Registration Number" required>
+            <br><br>
+
+            <label for="dob">Date of birth:</label>
+            &nbsp;&nbsp;
+            <input type="date" id="dob" name="dob" required>
+            <br><br>
+
+            Gender:
+            &nbsp;&nbsp;
+            <input type="radio" id="html" name="gender" required>
+            <label for="html">Male</label> 
+            &nbsp;&nbsp;
+            <input type="radio" id="css" name="gender" required>
+            <label for="css">Female</label>
+            <br><br>
+
+            <label for="email">Email id</label>
+            &nbsp;&nbsp;
+            <input type="text" id="email" name="email" placeholder="username@xyz.com" required>
+            <br><br>
+
+            <label for="specialization">Specialization</label>
+            &nbsp;&nbsp;
+            <input type="text" id="specialization" placeholder="Specialization" required>
+            <br><br>
+
+            <label for="qualification">Qualification</label>
+            &nbsp;&nbsp;
+            <input type="text" id="qualification" placeholder="Qualification" required>
+            <br><br>
+
+            <label for="contact">Contact No</label>
+            &nbsp;&nbsp;
+            <input type="text" id="contact" pattern="[0-9]{10}" placeholder="10 digit contact number" title="Please provide valid contact number with 10 digits" required>
+            <br><br>
+
+
+            <label for="address">Address</label>
+            &nbsp;&nbsp;
+            <input type="text" name="address" id="address">
+            <br><br>
+    
+            <label for="visit-days">Visiting Days:</label>
+            <input type="checkbox" id="monday" >
+            <label for="monday">Mon</label>
+            <input type="checkbox" id="tuesday" >
+            <label for="tuesday">Tue</label>
+            <input type="checkbox" id="wednesday" >
+            <label for="wednesday">Wed</label>
+            <input type="checkbox" id="thursday" >
+            <label for="thursday">Thu</label>
+            <input type="checkbox" id="friday" >
+            <label for="friday">Fri</label>
+            <input type="checkbox" id="saturday" >
+            <label for="saturday">Sat</label>
+            <input type="checkbox" id="sunday" >
+            <label for="sunday">Sun</label>
+            <br><br>
+
+            <label for="visiting-time">Visiting Time</label>
+            &nbsp;&nbsp;
+            <select id="visiting-time" name="visiting-time">
+                <option value="morning">Morning</option>
+                <option value="afternoon">Afternoon</option>
+                <option value="evening">Evening</option>
+            </select>
+            
+            <br><br>
+            <label for="no-of-patients">NoOfPatientsperDay</label>
+            &nbsp;&nbsp;
+            <input type="number" name="no-of-patients" id="no-of-patients" required>
+            <br><br>
+    
+            <label for="department-no">Department Number</label>
+            &nbsp;&nbsp;
+            <input type="number" name="department-no" id="department-no" required>
+            <br><br>
+
+            <input type="submit" value="Submit" onclick="ValidateEmail(myForm.email); return false;">
+        </p>
+    </form>
+    <script src="./js/script.js"></script>
+</body>
+</html>

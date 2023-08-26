@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head></head>
+    <title>Patient</title>
+    <link rel="stylesheet" href="./css/patient.css">
+</head>
+<body>
+    <h2>Add Patient Details</h2>
+
+    <form method="post" action="./Welcome.html" id="myForm">
+        <p>
+        <label for="fname">First Name</label>
+        <input type="text" name="fname" pattern="[a-zA-Z]+" maxlength="30"  id="fname" required>
+        <br><br>
+
+        <label for="lname">Last Name</label>
+        <input type="text" name="lname" id="lname" required>
+        <br><br>
+
+        <label for="dob">Date of Birth</label>
+        <input type="date" name="dob" id="dob"  required>
+        <br><br>
+
+        <label for="father/spouse-name">Father/Spouse Name</label> 
+        <input type="text" id="father/spouse-name" name="father/spouse-name" pattern="[a-zA-Z]+" maxlength="30" required>
+        <br><br>
+
+        <label for="blood-group">Blood Group</label>
+
+        <select name="blood-group" id="blood-group">
+          <option value="O+">O+</option>
+          <option value="O-">O-</option>
+          <option value="AB+">AB+</option>
+          <option value="AB-">AB-</option>
+          <option value="A+">A+</option>
+          <option value="A-">A-</option>
+          <option value="B+">B+</option>
+          <option value="B-">B-</option>
+        </select>
+        <br><br>
+
+        <label for="contact-no">Contact Number</label>
+        <input type="text" name="contact-no" id="contact-no" pattern="[0-9]{10}">
+        <br><br>
+
+        <label for="email">Email id</label>
+        &nbsp;&nbsp;
+        <input type="text" id="email" name="email" placeholder="username@xyz.com" required>
+        <br><br>
+
+
+        <label for="check">Visited Earlier</label>
+        <input type="checkbox" id="check" name="check" onclick="onlyOne(this)">
+        <label for="check">Yes</label>
+        <input type="checkbox" id="check" name="check" onclick="onlyOne(this)">
+        <label for="check">No</label>
+        <br><br>
+
+        <input type="submit" value="Submit" onclick="ValidateEmail(myForm.email); return false;">
+        </p>
+    </form>
+    <script src="./js/script.js"></script>
+</body>
+</html>
